@@ -1,0 +1,37 @@
+<mvc:View controllerName="navigationandrouting5.navigationandroutingproject5.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="Employee Detail Table">
+        <content>
+            <Table items="{/employees}" id="tab">
+                <columns>
+                    <Column>
+                        <Text text="Employee Id" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Employee Name" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Salary" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Location" />
+                    </Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem type="Active" id="col1">
+                        <cells>
+                            <Button type="Emphasized" text="{employeeId}" press="onClick" />
+
+                            <Text id="txt2" text="{empName}" />
+                            <Text id="txt3" text="{Salary}" />
+                            <Text id="txt4" text="{Location}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
